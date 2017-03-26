@@ -3,9 +3,11 @@ Stingray Visual Studio Code Settings
 
 This repo contains various vscode settings for Stingray.
 
-- [Custom make settings](./make_args.txt)
+- [Custom `make.rb` settings](./make_args.txt)
+  
+  Simply drop this file at the root of your Stingray repos.
 
-## [Workspace settings](./vscode)
+## [Workspace settings](./.vscode)
 
 `.vscode` contains Stingray workspace settings.
 
