@@ -17,7 +17,7 @@ This repo contains various vscode settings for Stingray.
 
 ## [Stingray debugger](https://github.com/jschmidt42/stingray-vscode-debugger)
 
-Make sure to install the Stingray Lua Debugger for which `.vscode/launch.json` define some Stingray Editor debugging configurations.
+Make sure to install the Stingray Lua Debugger for which `.vscode/launch.json` define some [Stingray Editor debugging configurations](https://github.com/jschmidt42/stingray-vscode-config/blob/master/.vscode/launch.json#L38).
 
 - GitHub project <https://github.com/jschmidt42/stingray-vscode-debugger>
 - Visual Studio Code marketplace <https://marketplace.visualstudio.com/items?itemName=jschmidt42.stingray-debug>
