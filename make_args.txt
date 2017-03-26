@@ -1,0 +1,8 @@
+--verbose
+--kill
+--update
+--no-docs
+--use-fbx
+--use-texture-reader
+--no-use-scaleform
+--use-editor-templates

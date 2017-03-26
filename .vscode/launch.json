@@ -1,0 +1,55 @@
+// Use IntelliSense to learn about possible Stingray debug attributes.
+// Hover to view descriptions of existing attributes.
+{
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Stingray Editor",
+            "url": "file:///${workspaceRoot}/editor/core/boot.html?partial=*&winId=main",
+            "pathMapping": {
+                "${workspaceRoot}": "file:///${workspaceRoot}/"
+            },
+            "port": 9088
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Stingray Panel",
+            "url": "file:///${workspaceRoot}/editor/core/boot.html?*&window=yes&*",
+            "pathMapping": {
+                "${workspaceRoot}": "file:///${workspaceRoot}/"
+            },
+            "port": 9088
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Boot Script",
+            "url": "file:///${workspaceRoot}/editor/core/boot.html?partial=*&mode=core/program",
+            "pathMapping": {
+                "${workspaceRoot}": "file:///${workspaceRoot}/"
+            },
+            "port": 9088
+        },
+        {
+            "type": "stingray",
+            "request": "attach",
+            "name": "Editor Engine",
+            "ip": "127.0.0.1",
+            "port": 14030
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Stingray Editor (all)",
+            "configurations": [
+                "Stingray Editor",
+                "Boot Script",
+                "Editor Engine"
+            ]
+        }
+    ]
+}
