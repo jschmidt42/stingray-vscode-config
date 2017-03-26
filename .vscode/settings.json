@@ -1,12 +1,29 @@
 // Place your settings in this file to overwrite default and user settings.
 {
     "files.exclude": {
+        "*.log": true,
+        "*.min.js": true,
+        "*.orig": true,
+        "*.bsi": true,
+        "*.font": true,
+        "*.svg": true,
+        "sqlite3.c": true,
+        "disclaimer*.html": true,
+        "*.diff": true,
+        "*.user": true,
+        "AssemblyInfo.cs": true,
+        "*.fbx": true,
         "**/.git": true,
         "**/.svn": true,
         "**/build": true,
         "**/output": true,
         "**/packages": true,
-        "**/.DS_Store": true
+        "**/.DS_Store": true,
+        "**/.nuget": true,
+        "**/obj": true,
+        "**/bin": true,
+        "**/Debug": true,
+        "**/Release": true
     },
 
     "search.exclude": {
