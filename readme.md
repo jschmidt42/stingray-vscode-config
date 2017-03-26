@@ -14,3 +14,10 @@ This repo contains various vscode settings for Stingray.
 ## [User settings](./User)
 
 `User` contains user settings that goes in `<user>/AppData/Roaming/Code/User`.
+
+## [Stingray debugger](https://github.com/jschmidt42/stingray-vscode-debugger)
+
+Make sure to install the Stingray Lua Debugger for which `.vscode/launch.json` define some Stingray Editor debugging configurations.
+
+- GitHub project <https://github.com/jschmidt42/stingray-vscode-debugger>
+- Visual Studio Code marketplace <https://marketplace.visualstudio.com/items?itemName=jschmidt42.stingray-debug>
