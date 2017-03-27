@@ -5,5 +5,9 @@
     { "key": "alt+shift+o", "command": "workbench.action.quickOpen" },
     { "key": "alt+m", "command": "workbench.action.gotoSymbol" },
     { "key": "alt+g", "command": "editor.action.goToDeclaration", "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor" },
-    { "key": "f7", "command": "workbench.action.tasks.runTask"}
+    { "key": "f7", "command": "workbench.action.tasks.runTask"},
+    { "key": "ctrl+numpad_add", "command": "editor.unfold", "when": "editorTextFocus" },
+    { "key": "ctrl+numpad_subtract", "command": "editor.fold", "when": "editorTextFocus" },
+    { "key": "ctrl+shift+numpad_add", "command": "editor.unfoldAll", "when": "editorTextFocus" },
+    { "key": "ctrl+shift+numpad_subtract", "command": "editor.foldLevel2", "when": "editorTextFocus" }
 ]
