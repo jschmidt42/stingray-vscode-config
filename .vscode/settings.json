@@ -27,6 +27,7 @@
     },
 
     "search.exclude": {
+        "**/*.svg": true,
         "**/node_modules": true,
         "**/3rdparty": true,
         "**/bower_components": true,
