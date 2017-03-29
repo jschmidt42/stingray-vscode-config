@@ -1,16 +1,17 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "files.autoSave": "onFocusChange",
-    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-    "workbench.activityBar.visible": true,
-    "editor.renderWhitespace": "all",
-    "window.zoomLevel": 0,
-    "workbench.colorTheme": "Visual Studio Light",
     "[cpp]": {
         "editor.quickSuggestions": false
     },
     "[c]": {
         "editor.quickSuggestions": false
     },
-    "workbench.welcome.enabled": false
+    "files.autoSave": "onFocusChange",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "workbench.activityBar.visible": true,
+    "editor.renderWhitespace": "all",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.welcome.enabled": false,
+    "explorer.autoReveal": false
 }
