@@ -18,7 +18,7 @@ ${cwd} the task runner's current working directory on startup
             "taskName": "build",
             "command": "ruby",
             "args": ["make.rb", "--no-use-editor-templates"],
-            "isShellCommand": true
+            "isBuildCommand": true
         },
         {
             "taskName": "check-for-reviewers",
@@ -41,7 +41,8 @@ ${cwd} the task runner's current working directory on startup
             "taskName": "lint",
             "command": "ruby",
             "args": ["./tools/command_line/lint.rb", "-i"],
-            "showOutput": "always"
+            "showOutput": "always",
+            "isShellCommand": true
         },
         {
             "taskName": "jshint",
@@ -51,15 +52,46 @@ ${cwd} the task runner's current working directory on startup
         },
         {
             "taskName": "build editor",
-            "command": "ruby",
-            "args": ["make.rb", "--editor", "--no-update", "--no-use-editor-templates"],
-            "showOutput": "always"
+            "command": "C:/Program Files (x86)/MSBuild/14.0/Bin/msbuild",
+            "args": [
+                "${workspaceRoot}/build/editor/win64/stingray_editor_win64.sln",
+                "/p:Configuration=Dev;GenerateFullPaths=true;WarningLevel=0",
+                "/maxcpucount",
+                "/verbosity:minimal"
+            ],
+            "echoCommand": true,
+            "isBuildCommand": true,
+            "showOutput": "always",
+            "problemMatcher": "$msCompile"
         },
         {
             "taskName": "build engine",
-            "command": "ruby",
-            "args": ["make.rb", "--no-update", "--engine"],
-            "showOutput": "always"
+            "command": "C:/Program Files (x86)/MSBuild/14.0/Bin/msbuild",
+            "args": [
+                "${workspaceRoot}/build/engine/win64/stingray_engine_win64.sln",
+                "/p:Configuration=Dev;GenerateFullPaths=true;WarningLevel=0",
+                "/maxcpucount",
+                "/verbosity:minimal"
+            ],
+            "echoCommand": true,
+            "isBuildCommand": true,
+            "showOutput": "always",
+            "problemMatcher": "$msCompile"
+        },
+
+        // Open Visual Studio solutions
+        {
+            "taskName": "open editor solution",
+            "command": "C:/Program Files (x86)/Microsoft Visual Studio 14.0/Common7/IDE/devenv.exe",
+            "args": ["./build/editor/win64/stingray_editor_win64.sln"],
+            "showOutput": "never",
+            "isShellCommand": true
+        },
+        {
+            "taskName": "open engine solution",
+            "command": "C:/Program Files (x86)/Microsoft Visual Studio 14.0/Common7/IDE/devenv.exe",
+            "args": ["./build/engine/win64/stingray_engine_win64.sln"],
+            "showOutput": "never"
         }
     ]
 }

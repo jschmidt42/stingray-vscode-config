@@ -30,6 +30,20 @@
         "**/node_modules": true,
         "**/3rdparty": true,
         "**/bower_components": true,
-        "**/*.svg": true
+        "tools/console": true,
+        "tools/flow_editor": true,
+        "tools/localizer": true,
+        "tools/network_analyzer": true,
+        "tools/patch_builder": true,
+        "tools/timpani": true,
+        "tools/tool_center": true,
+        "tools/winforms_app_common": true,
+        "tools/view_common": true,
+        "tools/json_merge": true
+    },
+    "files.associations": {
+        "qdesktopservices": "cpp",
+        "qdir": "cpp",
+        "qlocalserver": "cpp"
     }
 }

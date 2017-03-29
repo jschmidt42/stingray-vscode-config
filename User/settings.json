@@ -5,7 +5,7 @@
     "workbench.activityBar.visible": true,
     "editor.renderWhitespace": "all",
     "window.zoomLevel": 0,
-    "workbench.colorTheme": "Quiet Light",
+    "workbench.colorTheme": "Visual Studio Light",
     "[cpp]": {
         "editor.quickSuggestions": false
     },

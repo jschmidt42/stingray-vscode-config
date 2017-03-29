@@ -47,7 +47,6 @@
             "name": "Stingray Editor (all)",
             "configurations": [
                 "Stingray Editor",
-                "Boot Script",
                 "Editor Engine"
             ]
         }
