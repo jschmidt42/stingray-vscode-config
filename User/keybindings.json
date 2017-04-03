@@ -9,5 +9,5 @@
     { "key": "ctrl+numpad_add", "command": "editor.unfold", "when": "editorTextFocus" },
     { "key": "ctrl+numpad_subtract", "command": "editor.fold", "when": "editorTextFocus" },
     { "key": "ctrl+shift+numpad_add", "command": "editor.unfoldAll", "when": "editorTextFocus" },
-    { "key": "ctrl+shift+numpad_subtract", "command": "editor.foldLevel2", "when": "editorTextFocus" }
+    { "key": "ctrl+shift+numpad_subtract", "command": "macros.unfoldMany", "when": "editorTextFocus" }
 ]

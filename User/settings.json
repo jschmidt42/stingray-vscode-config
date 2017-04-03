@@ -6,6 +6,16 @@
     "[c]": {
         "editor.quickSuggestions": false
     },
+
+    "macros": {
+        "unfoldMany": [
+            "editor.foldLevel1",
+            "editor.foldLevel2",
+            "editor.foldLevel3"
+        ]
+    },
+
+
     "files.autoSave": "onFocusChange",
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "workbench.activityBar.visible": true,
@@ -13,5 +23,6 @@
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.welcome.enabled": false,
-    "explorer.autoReveal": false
+    "explorer.autoReveal": false,
+    "workbench.editor.enablePreview": false
 }

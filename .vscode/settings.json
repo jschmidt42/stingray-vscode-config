@@ -23,10 +23,12 @@
         "**/obj": true,
         "**/bin": true,
         "**/Debug": true,
-        "**/Release": true
+        "**/Release": true,
+        "**/VSCode-win32-*": true
     },
 
     "search.exclude": {
+        "**/disclaimer*.html": true,
         "**/*.svg": true,
         "**/node_modules": true,
         "**/3rdparty": true,
