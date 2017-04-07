@@ -47,6 +47,7 @@
     "files.associations": {
         "qdesktopservices": "cpp",
         "qdir": "cpp",
-        "qlocalserver": "cpp"
+        "qlocalserver": "cpp",
+        "regex": "cpp"
     }
 }
