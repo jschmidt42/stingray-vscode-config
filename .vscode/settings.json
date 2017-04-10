@@ -29,6 +29,7 @@
 
     "search.exclude": {
         "**/disclaimer*.html": true,
+        "**/dist": true,
         "**/*.svg": true,
         "**/node_modules": true,
         "**/3rdparty": true,
@@ -44,6 +45,7 @@
         "tools/view_common": true,
         "tools/json_merge": true
     },
+
     "files.associations": {
         "qdesktopservices": "cpp",
         "qdir": "cpp",

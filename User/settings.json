@@ -124,5 +124,6 @@
             "define": false,
             "requirejs": false
         }
-    }
+    },
+    "workbench.iconTheme": "vscode-icons"
 }
