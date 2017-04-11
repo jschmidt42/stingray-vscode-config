@@ -26,6 +26,17 @@
     "explorer.autoReveal": false,
     "workbench.editor.enablePreview": false,
 
+    "workbench.iconTheme": "vscode-icons",
+
+    // Is git enabled
+    "git.enabled": false,
+
+    // Path to the git executable
+    "git.path": null,
+
+    // Whether auto fetching is enabled.
+    "git.autofetch": false,
+
     "jshint.options": {
         // JSHint Default Configuration File (as on JSHint website)
         // See http://jshint.com/docs/ for more details
@@ -124,6 +135,5 @@
             "define": false,
             "requirejs": false
         }
-    },
-    "workbench.iconTheme": "vscode-icons"
+    }
 }
