@@ -1,6 +1,7 @@
 // Place your settings in this file to overwrite default and user settings.
 {
     "files.exclude": {
+        "tests.log": true,
         "*.log": true,
         "*.min.js": true,
         "*.orig": true,
@@ -28,6 +29,7 @@
     },
 
     "search.exclude": {
+        "**/*.bsi": true,
         "**/disclaimer*.html": true,
         "**/dist": true,
         "**/*.svg": true,
