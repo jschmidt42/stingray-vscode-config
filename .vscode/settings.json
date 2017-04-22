@@ -32,6 +32,7 @@
         "**/*.bsi": true,
         "**/disclaimer*.html": true,
         "**/dist": true,
+        "**/out": true,
         "**/*.svg": true,
         "**/node_modules": true,
         "**/3rdparty": true,
