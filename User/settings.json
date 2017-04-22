@@ -37,6 +37,23 @@
     // Whether auto fetching is enabled.
     "git.autofetch": false,
 
+    "vsicons.associations.files": [
+        { "icon": "stingray",
+          "extensions": [
+            "settings.ini",
+            "stingray_project",
+            "stingray_plugin",
+            "package",
+            "physics_properties",
+            "level",
+            "material",
+            "unit",
+            "texture",
+            "flow",
+            "physics"
+        ], "format": "png" }
+    ],
+
     "jshint.options": {
         // JSHint Default Configuration File (as on JSHint website)
         // See http://jshint.com/docs/ for more details
@@ -87,7 +104,7 @@
         "eqnull"        : false,     // true: Tolerate use of `== null`
         "esversion"     : 6,         // {int} Specify the ECMAScript version to which the code must adhere.
         "moz"           : false,     // true: Allow Mozilla specific syntax (extends and overrides esnext features)
-                                    // (ex: `for each`, multiple try/catch, function expression…)
+                                     // (ex: `for each`, multiple try/catch, function expression)
         "evil"          : false,     // true: Tolerate use of `eval` and `new Function()`
         "expr"          : false,     // true: Tolerate `ExpressionStatement` as Programs
         "funcscope"     : false,     // true: Tolerate defining variables inside control statements
