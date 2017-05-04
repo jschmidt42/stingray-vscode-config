@@ -25,6 +25,7 @@
     "workbench.welcome.enabled": false,
     "explorer.autoReveal": false,
     "workbench.editor.enablePreview": false,
+    "editor.codeLens": false,
 
     "workbench.iconTheme": "vscode-icons",
 

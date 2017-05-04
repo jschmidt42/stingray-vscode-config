@@ -25,10 +25,14 @@
         "**/bin": true,
         "**/Debug": true,
         "**/Release": true,
-        "**/VSCode-win32-*": true
+        "**/VSCode-win32-*": true,
+        "**/*.js.map": true,
+        "**/*.js": { "when": "$(basename).ts" }
     },
 
     "search.exclude": {
+        "editor/core/stingray.js": true,
+        "editor/core/stingray.d.ts": true,
         "**/*.bsi": true,
         "**/disclaimer*.html": true,
         "**/dist": true,
@@ -46,7 +50,10 @@
         "tools/tool_center": true,
         "tools/winforms_app_common": true,
         "tools/view_common": true,
-        "tools/json_merge": true
+        "tools/json_merge": true,
+
+        "editor/plugins/log_console/**/*.js": true,
+        "editor/plugins/stingray_editor/**/*.js": true
     },
 
     "files.associations": {

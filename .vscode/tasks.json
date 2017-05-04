@@ -14,42 +14,38 @@ ${cwd} the task runner's current working directory on startup
     // for the documentation about the tasks.json format
     "version": "0.1.0",
     "tasks": [
-        /*{
-            "taskName": "typescript watch",
-            "options": {
-                "cwd": "${workspaceRoot}/editor"
-            },
-            "command": "npm",
+        {
+            "taskName": "tsw",
+            "command": "node",
+            "args": [
+                "./node_modules/tspw/bin/tspw",
+                "--root", ".",
+                "--tsc", "./node_modules/typescript/bin/tsc"
+            ],
+            "showOutput": "silent",
             "isShellCommand": true,
             "isBackground": true,
-            "showOutput": "always",
-            "args": [
-                "run", "watch"
-            ],
-            "problemMatcher": "$tsc-watch"
-        },*/
+            "options": {
+                "cwd": "${workspaceRoot}/editor"
+            }
+        },
         {
-            "taskName": "build",
+            "taskName": "build all",
             "command": "ruby",
-            "args": ["make.rb", "--no-use-editor-templates"],
+            "args": ["make.rb"],
             "isBuildCommand": true
         },
         {
-            "taskName": "check-for-reviewers",
+            "taskName": "check-for-reviewers (develop)",
             "command": "ruby",
             "args": ["./tools/command_line/check-for-reviewers.rb"],
             "isShellCommand": true
         },
-		{
-            "taskName": "run editor",
-            "command": "./build/binaries/editor/stingray_editor.exe",
-            "showOutput": "always"
-        },
         {
-            "taskName": "run engine toolchain",
-            "command": "./build/binaries/engine/win64/dev/stingray_win64_dev.exe",
-            "args": ["--toolchain", "${workspaceRoot}/build/binaries"],
-            "showOutput": "always"
+            "taskName": "check-for-reviewers (release)",
+            "command": "ruby",
+            "args": ["./tools/command_line/check-for-reviewers.rb", "--base", "origin/release/1.9.0"],
+            "isShellCommand": true
         },
         {
             "taskName": "lint",
@@ -103,21 +99,6 @@ ${cwd} the task runner's current working directory on startup
             "isBuildCommand": true,
             "showOutput": "always",
             "problemMatcher": "$msCompile"
-        },
-
-        // Open Visual Studio solutions
-        {
-            "taskName": "open editor solution",
-            "command": "C:/Program Files (x86)/Microsoft Visual Studio 14.0/Common7/IDE/devenv.exe",
-            "args": ["./build/editor/win64/stingray_editor_win64.sln"],
-            "showOutput": "never",
-            "isShellCommand": true
-        },
-        {
-            "taskName": "open engine solution",
-            "command": "C:/Program Files (x86)/Microsoft Visual Studio 14.0/Common7/IDE/devenv.exe",
-            "args": ["./build/engine/win64/stingray_engine_win64.sln"],
-            "showOutput": "never"
         }
     ]
 }
