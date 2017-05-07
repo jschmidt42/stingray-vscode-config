@@ -41,7 +41,8 @@
     "vsicons.associations.files": [
         { "icon": "stingray",
           "extensions": [
-            "settings.ini",
+		  	"settings.ini",
+            "sjson",
             "stingray_project",
             "stingray_plugin",
             "package",
@@ -51,7 +52,8 @@
             "unit",
             "texture",
             "flow",
-            "physics"
+            "physics",
+            "entity"
         ], "format": "png" }
     ],
 
