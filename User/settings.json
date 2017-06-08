@@ -155,5 +155,6 @@
             "define": false,
             "requirejs": false
         }
-    }
+    },
+    "vsicons.dontShowNewVersionMessage": true
 }

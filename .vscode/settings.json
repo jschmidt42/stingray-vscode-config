@@ -32,7 +32,8 @@
         "editor/plugins/log_console/*.js": true,
         "editor/plugins/stingray_editor/*.js": true,
         "editor/plugins/level_editor/*.js": true,
-        "editor/plugins/texture_manager/*.js": true,
+        "editor/plugins/omni_tool/*.js": true,
+		"editor/plugins/texture_manager/*.js": true,
         "editor/plugins/terrain_editor/*.js": true,
         "editor/app/*.js": true
     },
