@@ -68,6 +68,8 @@
         "qdir": "cpp",
         "qlocalserver": "cpp",
         "regex": "cpp",
-        "xiosbase": "cpp"
+        "xiosbase": "cpp",
+        "array": "cpp",
+        "xutility": "cpp"
     }
 }
