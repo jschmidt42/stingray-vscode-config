@@ -30,6 +30,21 @@ ${cwd} the task runner's current working directory on startup
             }
         },
         {
+            "taskName": "build ts",
+            "command": "node",
+            "args": [
+                "./node_modules/tspw/bin/tspw",
+                "--compile", "--root", ".",
+                "--tsc", "./node_modules/typescript/bin/tsc"
+            ],
+            "showOutput": "silent",
+            "isShellCommand": true,
+            "isBackground": true,
+            "options": {
+                "cwd": "${workspaceRoot}/editor"
+            }
+        },
+        {
             "taskName": "build all",
             "command": "ruby",
             "args": ["make.rb"],
