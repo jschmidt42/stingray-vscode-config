@@ -35,7 +35,8 @@ ${cwd} the task runner's current working directory on startup
             "args": [
                 "./node_modules/tspw/bin/tspw",
                 "--compile", "--root", ".",
-                "--tsc", "./node_modules/typescript/bin/tsc"
+                "--tsc", "./node_modules/typescript/bin/tsc",
+                "--tsc-args", "\"--listEmittedFiles\""
             ],
             "showOutput": "silent",
             "isShellCommand": true,
