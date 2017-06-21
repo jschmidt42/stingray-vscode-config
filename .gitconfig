@@ -1,0 +1,58 @@
+[core]
+	excludesfile = C:\\Users\\schmidj\\Documents\\gitignore_global.txt
+	editor = notepad
+	autocrlf = true
+[user]
+	name = Jonathan Schmidt
+	email = jonathan.schmidt@autodesk.com
+[push]
+	default = simple
+[color]
+	ui = true
+	status = auto
+	branch = auto
+[diff]
+	tool = sourcetree
+	guitool = beyondcompare3
+[difftool "bc3"]
+	path = c:/program files (x86)/beyond compare 4/bcomp.exe
+[merge]
+	tool = bc3
+[mergetool "bc3"]
+	path = c:/program files (x86)/beyond compare 4/bcomp.exe
+[alias]
+	diffall = difftool -d origin/master
+	diffserver = difftool -d HEAD^ origin/master
+	lg = log -i --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	pr = "!f() { git fetch origin refs/pull/$1/head:pr/$1; } ; f"
+	prc = "!f() { git fetch origin refs/pull/$1/head:pr/$1; git checkout pr/$1; } ; f"
+	rename = "!f() { git push origin origin/$1:refs/heads/$2 :$1; } ; f"
+	diffprev = "!f() { git difftool -d $1^ $1; } ; f"
+	diffbase = "!f() { git difftool -d $(git merge-base origin/develop origin/$1)..origin/$1; }; f"
+	diffbase2 = "!f() { git difftool -d $(git merge-base $1 $2)..$2; }; f"
+	diffbasesha = "!f() { git difftool -d $(git merge-base origin/develop $1)..$1; }; f"
+	my-commits-last-month = !git log --author=\"`git config user.name`\" --before={`date "+%Y-%m-01"`} --after={`date -v-1m "+%Y-%m-01"`} --reverse --pretty=format:\"%cd  %h  %s\" --date=short
+	db = "!f() { git difftool -d $(git merge-base origin/develop origin/$1)..origin/$1; }; f"
+	list-commited-ignored-files = "!f() { git ls-files | git check-ignore --no-index --stdin -v | grep -v !; }; f"
+[difftool "sourcetree"]
+	cmd = 'c:/program files (x86)/beyond compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = 'c:/program files (x86)/beyond compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	trustExitCode = true
+[pull]
+	rebase = true
+[difftool "beyondcompare3"]
+	path = C:/Program Files (x86)/Beyond Compare 4/bcomp.exe
+	cmd = \"C:/Program Files (x86)/Beyond Compare 4/bcomp.exe\" \"$LOCAL\" \"$REMOTE\"
+[mergetool]
+	keepBackup = false
+[mergetool "bc4"]
+	trustExitCode = true
+	cmd = 'C:/Program Files (x86)/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+[difftool "bc4"]
+	cmd = 'C:/Program Files (x86)/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\"
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
