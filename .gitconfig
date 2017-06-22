@@ -36,6 +36,7 @@
 	dbr = "!f() { git difftool -d $(git merge-base origin/release/1.8.0 origin/$1)..origin/$1; }; f"
 	list-commited-ignored-files = "!f() { git ls-files | git check-ignore --no-index --stdin -v | grep -v !; }; f"
 	fpush = push --force origin
+	tb = for-each-ref --format='%(refname:short) %(push:track)' refs/heads
 [difftool "sourcetree"]
 	cmd = 'C:/Program Files (x86)/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\"
 [mergetool "sourcetree"]
