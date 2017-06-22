@@ -15,6 +15,15 @@ ${cwd} the task runner's current working directory on startup
     "version": "0.1.0",
     "tasks": [
         {
+            "taskName": "tslint (fix)",
+            "command": "tslint",
+            "args": [
+                "--fix", "-c", "editor/tslint.json", "${file}"
+            ],
+            "isShellCommand": true,
+            "problemMatcher":"$tslint5"
+        },
+        {
             "taskName": "tsw",
             "command": "node",
             "args": [

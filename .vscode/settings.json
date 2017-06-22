@@ -1,5 +1,12 @@
 // Place your settings in this file to overwrite default and user settings.
 {
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 200,
+    "editor.wrappingIndent": "indent",
+    "editor.minimap.enabled": false,
+
+    "tslint.configFile": "editor/tslint.json",
+
     "files.exclude": {
         "tests.log": true,
         "*.log": true,
@@ -29,19 +36,20 @@
         "**/*.js.map": true,
         "**/*.js": { "when": "$(basename).ts" },
 
-        "editor/plugins/log_console/*.js": true,
-        "editor/plugins/stingray_editor/*.js": true,
-        "editor/plugins/level_editor/*.js": true,
-        "editor/plugins/omni_tool/*.js": true,
-        "editor/plugins/texture_manager/*.js": true,
-        "editor/plugins/terrain_editor/*.js": true,
-        "editor/plugins/property_editor/*.js": true,
-        "editor/plugins/level_flow_editor/*.js": true,
-        "editor/plugins/dcc_link/*.js": true,
-        "editor/plugins/light_baking/*.js": true,
-        "editor/plugins/navigation/*.js": true,
-        "editor/plugins/scene_explorer/*.js": true,
         "editor/plugins/asset_browser/*.js": true,
+        "editor/plugins/asset_preview/*.js": true,
+        "editor/plugins/dcc_link/*.js": true,
+        "editor/plugins/level_editor/*.js": true,
+        "editor/plugins/level_flow_editor/*.js": true,
+        "editor/plugins/light_baking/*.js": true,
+        "editor/plugins/log_console/*.js": true,
+        "editor/plugins/navigation/*.js": true,
+        "editor/plugins/omni_tool/*.js": true,
+        "editor/plugins/property_editor/*.js": true,
+        "editor/plugins/scene_explorer/*.js": true,
+        "editor/plugins/stingray_editor/*.js": true,
+        "editor/plugins/terrain_editor/*.js": true,
+        "editor/plugins/texture_manager/*.js": true,
         "editor/app/*.js": true
     },
 
