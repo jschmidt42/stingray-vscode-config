@@ -33,11 +33,13 @@
 	diffbasesha = "!f() { git difftool -d $(git merge-base origin/develop $1)..$1; }; f"
 	my-commits-last-month = !git log --author=\"`git config user.name`\" --before={`date "+%Y-%m-01"`} --after={`date -v-1m "+%Y-%m-01"`} --reverse --pretty=format:\"%cd  %h  %s\" --date=short
 	db = "!f() { git difftool -d $(git merge-base origin/develop origin/$1)..origin/$1; }; f"
+	dbr = "!f() { git difftool -d $(git merge-base origin/release/1.8.0 origin/$1)..origin/$1; }; f"
 	list-commited-ignored-files = "!f() { git ls-files | git check-ignore --no-index --stdin -v | grep -v !; }; f"
+	fpush = push --force origin
 [difftool "sourcetree"]
-	cmd = 'c:/program files (x86)/beyond compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\"
+	cmd = 'C:/Program Files (x86)/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\"
 [mergetool "sourcetree"]
-	cmd = 'c:/program files (x86)/beyond compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+	cmd = 'C:/Program Files (x86)/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
 	trustExitCode = true
 [pull]
 	rebase = true

@@ -8,3 +8,7 @@ REM Compare user settings
 
 REM Compare Stingray workspace settings
 %BC_CMD% "%CD%\\.vscode" "G:\\stingray\\.vscode"
+
+%BC_CMD% "%CD%\\.bash_profile" "%HOME%\\.bash_profile"
+%BC_CMD% "%CD%\\.gemrc" "%HOME%\\.gemrc"
+%BC_CMD% "%CD%\\.gitconfig" "%HOME%\\.gitconfig"
