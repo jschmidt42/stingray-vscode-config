@@ -37,6 +37,8 @@
 	list-commited-ignored-files = "!f() { git ls-files | git check-ignore --no-index --stdin -v | grep -v !; }; f"
 	fpush = push --force origin
 	tb = for-each-ref --format='%(refname:short) %(push:track)' refs/heads
+	merge-release-notes = "!f() { git log --oneline --grep=\"Merge pull request\" origin/develop..origin/release/2.0.0 --pretty=short | git shortlog -e; }; f"
+	pullall = "!f(){ git fetch -p --recurse-submodules=yes && git pull \"$@\" && git submodule update --init --recursive; }; f"
 [difftool "sourcetree"]
 	cmd = 'C:/Program Files (x86)/Beyond Compare 4/BComp.exe' \"$LOCAL\" \"$REMOTE\"
 [mergetool "sourcetree"]
@@ -59,3 +61,5 @@
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[log]
+  date = relative
