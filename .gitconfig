@@ -7,17 +7,19 @@
 	email = jonathan.schmidt@autodesk.com
 [push]
 	default = simple
+[branch]
+	autosetuprebase = always
 [color]
 	ui = true
 	status = auto
 	branch = auto
 [diff]
-	tool = sourcetree
+	tool = bc4
 	guitool = beyondcompare3
 [difftool "bc3"]
 	path = c:/program files (x86)/beyond compare 4/bcomp.exe
 [merge]
-	tool = bc3
+	tool = bc4
 [mergetool "bc3"]
 	path = c:/program files (x86)/beyond compare 4/bcomp.exe
 [alias]
